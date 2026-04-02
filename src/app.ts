@@ -1,8 +1,19 @@
+// Mesero -> server / rutas
+
 import express from "express";
-import { handleChat } from "./services/chatService";
+import { chatController } from "./controllers/chatController";
 
-const app = express()
-
+const app = express();
 const PORT = 3000;
 
-app.use()
+app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("Chatbot funcionando 🚀");
+});
+
+app.post("/chat", chatController);
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});

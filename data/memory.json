@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "1775108742565",
+    "user": "hola",
+    "bot": "¡Hola! ¿En qué puedo ayudarte?",
+    "timestamp": "2026-04-02T05:45:42.565Z"
+  },
+  {
+    "id": "1775108757311",
+    "user": "hola",
+    "bot": "¡Hola! ¿En qué puedo ayudarte?",
+    "timestamp": "2026-04-02T05:45:57.311Z"
+  },
+  {
+    "id": "1775108757781",
+    "user": "hola",
+    "bot": "¡Hola! ¿En qué puedo ayudarte?",
+    "timestamp": "2026-04-02T05:45:57.781Z"
+  }
+]

@@ -1,3 +1,5 @@
+// Chefs (cocinadores) -> services/logica negocio
+
 import { readConversation, writeConversation } from "../memory/memory";
 import { Message } from "../models/Message";
 

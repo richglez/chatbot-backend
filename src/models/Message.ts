@@ -1,5 +1,6 @@
+// Receta / reglas
+
 export interface Message {
-  //receta / reglas
   id: string; // identificador único
   user: string;
   bot: string;

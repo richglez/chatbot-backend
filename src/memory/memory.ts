@@ -1,5 +1,4 @@
-// src\memory\memory.ts
-// Chef?
+// Maneja los datos
 
 import fs from "fs";
 import path from "path";
