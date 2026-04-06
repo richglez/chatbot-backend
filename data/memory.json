@@ -58,5 +58,59 @@
     "user": "hola",
     "bot": "¡Hola! ¿En qué puedo ayudarte?",
     "timestamp": "2026-04-06T05:52:08.830Z"
+  },
+  {
+    "id": "2125d5ed-b765-46f5-872b-2970efe203d4",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! ¿En qué puedo ayudarte de nuevo?",
+    "timestamp": "2026-04-06T06:39:39.869Z"
+  },
+  {
+    "id": "ecb6e800-e40c-49e0-831f-b2671ed84ce2",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! ¿En qué puedo ayudarte de nuevo?",
+    "timestamp": "2026-04-06T06:39:42.634Z"
+  },
+  {
+    "id": "4b2310f9-a1d2-4897-b236-b183e797ad1d",
+    "user": "como estas",
+    "bot": "🤖Lo siento, no entiendo tu mensaje. ¿Puedes reformularlo?",
+    "timestamp": "2026-04-06T06:39:57.691Z"
+  },
+  {
+    "id": "5d635c02-af4c-4335-bd3d-6f370b9163ea",
+    "user": "cómo estás",
+    "bot": "¡Estoy bien, gracias por preguntar! ¿Y tú?",
+    "timestamp": "2026-04-06T06:40:13.101Z"
+  },
+  {
+    "id": "be3e7e0f-b3a6-422a-bb8e-699e87dbef5c",
+    "user": "bien",
+    "bot": "🤖Lo siento, no entiendo tu mensaje. ¿Puedes reformularlo?",
+    "timestamp": "2026-04-06T06:40:24.607Z"
+  },
+  {
+    "id": "c8884ccf-111a-4a4a-982c-5f8fe30f716b",
+    "user": "y yo",
+    "bot": "No estoy seguro a qué te refieres 🤔",
+    "timestamp": "2026-04-06T06:40:31.718Z"
+  },
+  {
+    "id": "ea56fad8-8585-48f6-b945-438cfed55bcf",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! ¿En qué puedo ayudarte de nuevo?",
+    "timestamp": "2026-04-06T06:40:45.115Z"
+  },
+  {
+    "id": "6c0ed0be-ae27-4882-b08a-bc0555c6571f",
+    "user": "cómo estás",
+    "bot": "¡Estoy bien, gracias por preguntar! ¿Y tú?",
+    "timestamp": "2026-04-06T06:40:59.765Z"
+  },
+  {
+    "id": "722c1f52-1c9a-4152-aa56-7bdfabb253ca",
+    "user": "y yo",
+    "bot": "¡Seguro que estás bien también! 😄",
+    "timestamp": "2026-04-06T06:41:06.340Z"
   }
 ]

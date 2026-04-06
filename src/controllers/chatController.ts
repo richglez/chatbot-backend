@@ -1,4 +1,4 @@
-// Jefe Chef -> Maneja los requests y respuestas del servidor
+// Capitán de Meseros ?-> Su intencion es poder responder al cliente
 
 import { Request, Response } from "express";
 import { handleChat } from "../services/chatService";
