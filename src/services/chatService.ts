@@ -1,12 +1,18 @@
-// Chefs (cocinadores) -> services/logica negocio
-
+// Chefs (cocinadores)
+import { v4 as uuidv4 } from "uuid";
 import { readConversation, writeConversation } from "../memory/memory";
 import { Message } from "../models/Message";
 
-export const handleChat = (userMessage: string): string => {
+export const handleChat = (userMessage: string): { reply: string } => {
   let botResponse = "";
+  const msg = userMessage.toLowerCase();
 
-  if (userMessage.toLowerCase().includes("hola")) {
+  if (
+    msg.includes("hola") ||
+    msg.includes("buenos días") ||
+    msg.includes("buenas tardes") ||
+    msg.includes("buenas noches")
+  ) {
     botResponse = "¡Hola! ¿En qué puedo ayudarte?";
   } else if (userMessage.toLowerCase().includes("cómo estás")) {
     botResponse = "¡Estoy bien, gracias por preguntar! ¿Y tú?";
@@ -18,12 +24,12 @@ export const handleChat = (userMessage: string): string => {
   const conversation = readConversation();
 
   const newConversation: Message = {
-    id: "" + Date.now(),
+    id: uuidv4(),
     user: userMessage,
     bot: botResponse,
     timestamp: new Date().toISOString(),
   };
 
   writeConversation([...conversation, newConversation]);
-  return botResponse;
+  return { reply: botResponse };
 };

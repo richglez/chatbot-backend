@@ -13,7 +13,7 @@ export const readConversation = (): Message[] => {
       console.log("El archivo no existe, devolviendo lista vacía.");
       return [];
     }
-    console.log("Leyendo conversacion...")
+    console.log("[MEMORY] Reading conversation...");
     const data = fs.readFileSync(filePath, "utf-8");
     return JSON.parse(data || "[]");
 
@@ -26,8 +26,8 @@ export const readConversation = (): Message[] => {
 export const writeConversation = (message: Message[]): void => {
   try {
     fs.writeFileSync(filePath, JSON.stringify(message, null, 2));
-    console.log("Escribiendo conversacion...")
+    console.log("[MEMORY] Writing conversation...");
   } catch (error) {
-    console.log("Error, no se pudo escribir el mensaje", error);
+    console.log("[MEMORY] Error, no se pudo escribir el mensaje", error);
   }
 };
