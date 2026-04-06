@@ -3,41 +3,69 @@ import { v4 as uuidv4 } from "uuid";
 import { readConversation, writeConversation } from "../memory/memory"; // funciones de leer la orden y cocinar la comida
 import { Message } from "../models/Message"; // RECETA
 
-export const handleChat = (userMessage: string): { reply: string } => {
-  const msg = userMessage.toLowerCase();
+type Intent = "greeting" | "status" | "unknown";
+
+const normalize = (text: string) =>
+  text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+
+const detectIntent = (msg: string): Intent => {
+  const userMessage = normalize(msg);
+  if (
+    userMessage.includes("hola") ||
+    userMessage.includes("buenos dias") ||
+    userMessage.includes("buenas tardes") ||
+    userMessage.includes("buenas noches")
+  ) {
+    return "greeting";
+  } else if (userMessage.includes("como estas")) {
+    return "status";
+  } else {
+    return "unknown";
+  }
+};
+
+export const handleChat = (msg: string): { reply: string } => {
+  const userMessage = normalize(msg);
   const recentMessages = getRecentMessages();
 
   let botResponse = "";
 
+  const intent = detectIntent(msg);
+
+  const lastMessage = recentMessages[recentMessages.length - 1];
+
   // 🧠 CONTEXT
   const hasGreetedBefore = recentMessages.some((m) =>
-    m.user.toLowerCase().includes("hola"),
+    normalize(m.user).includes("hola"),
   );
 
-  if (
-    msg.includes("hola") ||
-    msg.includes("buenos días") ||
-    msg.includes("buenas tardes") ||
-    msg.includes("buenas noches")
-  ) {
-    botResponse = hasGreetedBefore
-      ? "¡Hola de nuevo! ¿En qué puedo ayudarte de nuevo?"
-      : "¡Hola! ¿Cómo puedo ayudarte hoy?";
-  }
+  switch (intent) {
+    case "greeting":
+      botResponse = hasGreetedBefore
+        ? "¡Hola de nuevo! 😄"
+        : "🤖¡Hola! ¿Cómo puedo ayudarte hoy?";
+      break;
+    case "status":
+      botResponse = "🤖¡Estoy bien, gracias por preguntar! ¿Y tú?";
+      break;
 
-  // 🧠 CONTEXTO: responder algo dependiente
-  else if (msg.includes("y yo")) {
-    const lastBotMessage = recentMessages[recentMessages.length - 1]?.bot;
-
-    if (lastBotMessage?.includes("¿Y tú?")) {
-      botResponse = "¡Seguro que estás bien también! 😄";
-    } else {
-      botResponse = "No estoy seguro a qué te refieres 🤔";
-    }
-  } else if (userMessage.toLowerCase().includes("cómo estás")) {
-    botResponse = "¡Estoy bien, gracias por preguntar! ¿Y tú?";
-  } else {
-    botResponse = "🤖Lo siento, no entiendo tu mensaje. ¿Puedes reformularlo?";
+    case "unknown":
+      if (userMessage.includes("y yo")) {
+        if (lastMessage?.bot.includes("¿Y tú?")) {
+          botResponse = "¡Seguro estás bien también! 😄";
+        } else {
+          botResponse = "¿A qué te refieres con 'yo'? 🤔";
+        }
+      } else {
+        botResponse = "¿A qué te refieres con 'yo'? 🤔";
+      }
+      break;
+    default:
+      botResponse =
+        "🤖Lo siento, no entiendo tu mensaje. ¿Puedes reformularlo?";
   }
 
   // guardar conversacion en archivo json
@@ -55,6 +83,6 @@ export const handleChat = (userMessage: string): { reply: string } => {
 };
 
 export const getRecentMessages = (limit: number = 5): Message[] => {
-  const conversation = readConversation();
-  return conversation.slice(-limit); // esto trae los ultimos 5 mensajes de la conversacion
+  const chat = readConversation();
+  return chat.slice(-limit); // esto trae los ultimos 5 mensajes de la conversacion
 };
