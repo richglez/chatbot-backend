@@ -1,7 +1,7 @@
 // Chef -> Logica del negocio aqui se cocina la comida, es decir, la respuesta del bot a partir del mensaje del usuario
 import { v4 as uuidv4 } from "uuid";
-import { readMessage, writeMessage } from "../repositories/memoryStorage"; // funciones de leer la orden y cocinar la comida
-import { Message } from "../models/Message"; // RECETA
+import { readMessage, writeMessage } from "@/repositories/memoryStorage"; // funciones de leer la orden y cocinar la comida
+import { Message } from "@/models/Message"; // RECETA
 
 // Posibles intenciones del usuario
 type Intent = "greeting" | "status" | "name" | "ask_name" | "unknown";

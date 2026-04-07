@@ -2,7 +2,7 @@
 
 import fs from "fs";
 import path from "path";
-import { Message } from "../models/Message";
+import { Message } from "@/models/Message";
 
 const filePath = path.join(__dirname, "../../data/memory.json");
 

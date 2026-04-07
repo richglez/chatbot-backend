@@ -1,7 +1,7 @@
 // Capitán de Meseros ?-> Su intencion es poder responder al cliente
 
 import { Request, Response } from "express";
-import { handleChat } from "../services/chatService";
+import { handleChat } from "@/services/chatService";
 
 // Middleware para manejar el endpoint de chat
 export const chatController = (req: Request, res: Response) => {
