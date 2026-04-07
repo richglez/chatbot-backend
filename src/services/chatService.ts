@@ -33,7 +33,7 @@ export const handleChat = (msg: string): { reply: string } => {
 
   let botResponse = "";
 
-  const intent = detectIntent(msg);
+  const intent = detectIntent(userMessage);
 
   const lastMessage = recentMessages[recentMessages.length - 1];
 
@@ -83,6 +83,6 @@ export const handleChat = (msg: string): { reply: string } => {
 };
 
 export const getRecentMessages = (limit: number = 5): Message[] => {
-  const chat = readConversation();
-  return chat.slice(-limit); // esto trae los ultimos 5 mensajes de la conversacion
+  const chats = readConversation(); // obtener la conversacion completa del json
+  return chats.slice(-limit); // esto trae los ultimos 5 mensajes de la conversacion
 };
