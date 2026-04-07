@@ -1,6 +1,10 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
+    "rootDir": "./src",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
     // File Layout
     // "rootDir": "./src",
     // "outDir": "./dist",
@@ -38,7 +42,6 @@
     "skipLibCheck": true,
     "target": "ES2020",
     "module": "CommonJS",
-    "rootDir": "./src",
     "outDir": "./dist",
     "esModuleInterop": true,
     "strict": true
