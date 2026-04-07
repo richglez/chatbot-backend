@@ -7,13 +7,13 @@ import { Message } from "../models/Message";
 const filePath = path.join(__dirname, "../../data/memory.json");
 
 // Leer memoria
-export const readConversation = (): Message[] => {
+export const readMessage = (): Message[] => {
   try {
     if (!fs.existsSync(filePath)) {
       console.log("El archivo no existe, devolviendo lista vacía.");
       return [];
     }
-    console.log("[MEMORY] Reading conversation...");
+    console.log("[MEMORY] Reading message...");
     const data = fs.readFileSync(filePath, "utf-8");
     return JSON.parse(data || "[]");
 
@@ -23,10 +23,10 @@ export const readConversation = (): Message[] => {
   }
 };
 
-export const writeConversation = (message: Message[]): void => {
+export const writeMessage = (message: Message[]): void => {
   try {
     fs.writeFileSync(filePath, JSON.stringify(message, null, 2));
-    console.log("[MEMORY] Writing conversation...");
+    console.log("[MEMORY] Writing message...");
   } catch (error) {
     console.log("[MEMORY] Error, no se pudo escribir el mensaje", error);
   }
