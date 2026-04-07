@@ -1,3 +1,3 @@
 # Chatbot Backend
 
-Proyecto de chatbot con memoria usando Node.js y TypeScript.
+Chatbot project with memory using Node.js and TypeScript.
