@@ -322,5 +322,257 @@
     "user": "como estas",
     "bot": "🤖¡Estoy bien, gracias por preguntar! ¿Y tú?",
     "timestamp": "2026-04-07T01:34:34.489Z"
+  },
+  {
+    "id": "6edc2b06-ea32-4169-bd6f-15c170a3ace6",
+    "user": "como estas",
+    "bot": "🤖¡Estoy bien, gracias por preguntar! ¿Y tú?",
+    "timestamp": "2026-04-07T06:40:03.224Z"
+  },
+  {
+    "id": "eb06c718-1133-430f-9e94-9b8ff4be7ac1",
+    "user": "hola",
+    "bot": "🤖¡Hola! ¿Cómo puedo ayudarte hoy?",
+    "timestamp": "2026-04-07T06:40:09.202Z"
+  },
+  {
+    "id": "7636c2df-7b2d-469a-8c88-837f52743302",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! 😄",
+    "timestamp": "2026-04-07T19:37:38.672Z"
+  },
+  {
+    "id": "075f681e-4a9e-4729-b913-546849db6731",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! 😄",
+    "timestamp": "2026-04-07T19:37:40.280Z"
+  },
+  {
+    "id": "f5696fb8-5142-4be6-8b95-430d7142e09f",
+    "user": "como estas",
+    "bot": "🤖¡Estoy bien, gracias por preguntar! ¿Y tú?",
+    "timestamp": "2026-04-07T19:37:44.282Z"
+  },
+  {
+    "id": "1ca9511e-6748-46e6-bfd8-1f3851147b0b",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! 😄",
+    "timestamp": "2026-04-07T20:22:35.120Z"
+  },
+  {
+    "id": "67c3a129-6c10-46b9-84a5-0909bb9faa00",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! 😄",
+    "timestamp": "2026-04-07T20:22:36.477Z"
+  },
+  {
+    "id": "6cae41b4-8025-41d7-bf1d-eada9a8d5b3c",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! 😄",
+    "timestamp": "2026-04-07T20:22:36.938Z"
+  },
+  {
+    "id": "6bef47ea-1b7f-419f-aac2-75109a2d96b9",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! 😄",
+    "timestamp": "2026-04-07T21:03:52.616Z"
+  },
+  {
+    "id": "9fe42181-e257-4a1f-9d78-d7a8a136cbc5",
+    "user": "Me llamo Rich",
+    "bot": "¡Encantado de conocerte, rich! 😄",
+    "timestamp": "2026-04-07T21:04:19.913Z"
+  },
+  {
+    "id": "b01d128c-47a6-470a-ab78-6a97c26b08d3",
+    "user": "como me llamo?",
+    "bot": "¡Encantado de conocerte, ?! 😄",
+    "timestamp": "2026-04-07T21:04:42.800Z"
+  },
+  {
+    "id": "2517cc3e-5d0c-40cc-ba99-b472d6ed48a2",
+    "user": "como me llamo",
+    "bot": "No entendí tu nombre 🤔",
+    "timestamp": "2026-04-07T21:04:48.934Z"
+  },
+  {
+    "id": "ea6702e0-705d-4a8d-8a1b-19d6ccf67e7c",
+    "user": "me llamo rich",
+    "bot": "¡Encantado de conocerte, rich! 😄",
+    "timestamp": "2026-04-07T21:04:57.099Z"
+  },
+  {
+    "id": "0643400e-8635-43c9-b47d-9d1628175e97",
+    "user": "como me llamo",
+    "bot": "No entendí tu nombre 🤔",
+    "timestamp": "2026-04-07T21:05:03.381Z"
+  },
+  {
+    "id": "bb49f9ad-1a48-4a85-ad9d-e8961f0bb907",
+    "user": "como estas",
+    "bot": "🤖 Estoy bien 😄 ¿Y tú?",
+    "timestamp": "2026-04-07T21:05:12.207Z"
+  },
+  {
+    "id": "1eb329a8-26f7-431c-af8f-ecbc3f2c6952",
+    "user": "y yo",
+    "bot": "¡Seguro estás bien también! 😄",
+    "timestamp": "2026-04-07T21:05:18.620Z"
+  },
+  {
+    "id": "352ec10b-9bf9-4cb8-a3c5-2e0b4820ee31",
+    "user": "hola",
+    "bot": "🤖 ¡Hola! ¿Cómo puedo ayudarte hoy?",
+    "timestamp": "2026-04-07T21:08:21.391Z"
+  },
+  {
+    "id": "0accca16-e0a5-4103-b9f2-2e8a14d04e9c",
+    "user": "como me llamo",
+    "bot": "Aún no me has dicho tu nombre 🤔",
+    "timestamp": "2026-04-07T21:08:26.865Z"
+  },
+  {
+    "id": "3d4bf164-fe2b-4435-9748-835c0b544f01",
+    "user": "me llamo ruch",
+    "bot": "¡Encantado de conocerte, ruch! 😄",
+    "timestamp": "2026-04-07T21:08:34.964Z"
+  },
+  {
+    "id": "65e10902-ec07-4a4c-9d6f-ee40dfe59dd3",
+    "user": "como me llamo",
+    "bot": "Te llamas ruch 😏",
+    "timestamp": "2026-04-07T21:08:40.727Z"
+  },
+  {
+    "id": "fff7f319-e446-4a6a-838e-d649234daa12",
+    "user": "como me llamo?",
+    "bot": "Aún no me has dicho tu nombre 🤔",
+    "timestamp": "2026-04-07T21:08:45.836Z"
+  },
+  {
+    "id": "240ee4ae-d0b7-4345-8212-865115eac607",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! 😄",
+    "timestamp": "2026-04-07T21:11:39.321Z"
+  },
+  {
+    "id": "70b0cefa-2c74-48c1-91cc-065355d4c561",
+    "user": "como me llamo?",
+    "bot": "Te llamas ? 😏",
+    "timestamp": "2026-04-07T21:11:46.402Z"
+  },
+  {
+    "id": "0f7f7187-c50e-42bc-b38a-5b63c2f34e71",
+    "user": "como me llamo",
+    "bot": "Te llamas ? 😏",
+    "timestamp": "2026-04-07T21:11:50.848Z"
+  },
+  {
+    "id": "dbea5c4a-01e7-4988-897a-6be9766d4612",
+    "user": "no",
+    "bot": "🤖 No entendí eso aún, pero estoy aprendiendo 😄",
+    "timestamp": "2026-04-07T21:11:55.208Z"
+  },
+  {
+    "id": "a9a6c92a-9113-4cb0-a28d-408ada64b7df",
+    "user": "me llamo Rich",
+    "bot": "¡Encantado de conocerte, rich! 😄",
+    "timestamp": "2026-04-07T21:12:01.752Z"
+  },
+  {
+    "id": "f8cca0c6-91e4-4d50-8291-420a3c49713c",
+    "user": "como me llamo",
+    "bot": "Te llamas Rich 😏",
+    "timestamp": "2026-04-07T21:12:07.299Z"
+  },
+  {
+    "id": "0210f676-cffe-48d2-936b-18aa8358095e",
+    "user": "hola?",
+    "bot": "🤖 ¡Hola! ¿Cómo puedo ayudarte hoy?",
+    "timestamp": "2026-04-07T21:12:27.998Z"
+  },
+  {
+    "id": "a58923c8-7808-4228-af10-1716ff55bdce",
+    "user": "como me llamo?",
+    "bot": "Aún no me has dicho tu nombre 🤔",
+    "timestamp": "2026-04-07T21:13:16.362Z"
+  },
+  {
+    "id": "35e1a493-35cb-47ba-b32a-2b5c19a15a3c",
+    "user": "rich",
+    "bot": "🤖 No entendí eso aún, pero estoy aprendiendo 😄",
+    "timestamp": "2026-04-07T21:13:28.622Z"
+  },
+  {
+    "id": "150c2505-0c1e-480b-bb1f-ff1dc97513c9",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! 😄",
+    "timestamp": "2026-04-07T21:13:33.064Z"
+  },
+  {
+    "id": "6d5a5a73-be76-48cb-92c2-dc17d26801d2",
+    "user": "como me llamo?",
+    "bot": "Te llamas ? 😏",
+    "timestamp": "2026-04-07T21:13:39.013Z"
+  },
+  {
+    "id": "491f3591-d51e-4386-913b-636ce37066c0",
+    "user": "como me llamo?",
+    "bot": "Te llamas ? 😏",
+    "timestamp": "2026-04-07T21:16:19.969Z"
+  },
+  {
+    "id": "9602a148-5235-412e-b728-24ff35140366",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! 😄",
+    "timestamp": "2026-04-07T21:16:23.427Z"
+  },
+  {
+    "id": "f6c3363b-c3c8-435d-bdea-8e86d5c82672",
+    "user": "como me llamo?",
+    "bot": "Te llamas ? 😏",
+    "timestamp": "2026-04-07T21:16:28.183Z"
+  },
+  {
+    "id": "9b83e20d-a6d6-4881-8f4e-baae8e706a99",
+    "user": "como me llamo?",
+    "bot": "Te llamas ? 😏",
+    "timestamp": "2026-04-07T21:18:22.197Z"
+  },
+  {
+    "id": "0c66f50d-814c-484d-a89e-d31ae7b043e8",
+    "user": "como me llamo?",
+    "bot": "Te llamas ? 😏",
+    "timestamp": "2026-04-07T21:19:02.705Z"
+  },
+  {
+    "id": "f32f36aa-dbd4-44fa-aa46-b540407d983d",
+    "user": "como me llamo?",
+    "bot": "Te llamas ? 😏",
+    "timestamp": "2026-04-07T21:19:16.456Z"
+  },
+  {
+    "id": "1a763831-ddf9-400a-95e5-298f135a03fa",
+    "user": "hola",
+    "bot": "¡Hola de nuevo! 😄",
+    "timestamp": "2026-04-07T21:19:47.760Z"
+  },
+  {
+    "id": "414498e3-7300-479a-a221-d07e788d888f",
+    "user": "me llamo rich",
+    "bot": "¡Encantado de conocerte, rich! 😄",
+    "timestamp": "2026-04-07T21:19:52.797Z"
+  },
+  {
+    "id": "87441b85-ff09-4f61-87be-ef90655fdab8",
+    "user": "como me llamo?",
+    "bot": "Te llamas rich 😏",
+    "timestamp": "2026-04-07T21:20:00.046Z"
+  },
+  {
+    "id": "21ce9be1-ddfd-4954-add4-5a53fa94d981",
+    "user": "como me llamo?",
+    "bot": "Te llamas ? 😏",
+    "timestamp": "2026-04-07T21:20:02.023Z"
   }
 ]
