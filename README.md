@@ -19,9 +19,9 @@ A robust backend developed with Node.js and TypeScript that implements a user st
 ```
 ├───data/
 ├───src/
-    ├───controllers/ # Middleware para manejar el endpoint de chat, manejo de peticiones y validación de datos
-    ├───models/ # Definicion de interfaces (Message, UserData)
-    ├───repositories/ # Repositorios de almacenamiento en memoria (memory, user)
-    ├───routes/ # Organizacion de (endpoints) de la API
-    └───uervices/ # Logica de manejador de mensajes (handleChat, getRecentMessages, detectIntent)
+    ├───controllers/                      # Middleware para manejar el endpoint de chat, manejo de peticiones y validación de datos
+    ├───models/                           # Definicion de interfaces (Message, UserData)
+    ├───repositories/                     # Repositorios de almacenamiento en memoria (memory, user)
+    ├───routes/                           # Organizacion de (endpoints) de la API
+    └───uervices/                         # Logica de manejador de mensajes (handleChat, getRecentMessages, detectIntent)
 ```
