@@ -1,0 +1,30 @@
+[
+  {
+    "id": "3776a35e-895d-4633-b68f-72640b5109d4",
+    "userId": "123",
+    "user": "hola",
+    "bot": "🤖 ¡Hola! ¿Cómo puedo ayudarte hoy?",
+    "timestamp": "2026-04-07T23:10:42.246Z"
+  },
+  {
+    "id": "c49968b2-656f-4785-88b4-55faf97879ef",
+    "userId": "123",
+    "user": "me llamo ruch",
+    "bot": "¡Encantado de conocerte, ruch! 😄",
+    "timestamp": "2026-04-07T23:10:54.172Z"
+  },
+  {
+    "id": "d10466a7-da63-435e-810d-7b0d62f42f2b",
+    "userId": "123",
+    "user": "me llamo ruch",
+    "bot": "¡Encantado de conocerte, ruch! 😄",
+    "timestamp": "2026-04-08T00:01:39.554Z"
+  },
+  {
+    "id": "1e3cbade-3ff3-4f2b-9072-689be96f3a92",
+    "userId": "123",
+    "user": "me llamo ru",
+    "bot": "¡Encantado de conocerte, ru! 😄",
+    "timestamp": "2026-04-08T00:01:49.757Z"
+  }
+]

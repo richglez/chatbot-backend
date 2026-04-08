@@ -6,7 +6,6 @@ import chatRoutes from "./routes/chatRoutes";
 const app = express();
 const PORT = 3000;
 
-
 // Permitir que mi app entienda JSON en el cuerpo de las peticiones
 app.use(express.json());
 

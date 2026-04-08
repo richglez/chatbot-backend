@@ -4,7 +4,7 @@
   "description": "AI chatbot backend with memory",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/app.ts"
   },
   "keywords": [],
   "author": "richglez",
@@ -13,6 +13,7 @@
   "dependencies": {
     "express": "^5.2.1",
     "openai": "^6.33.0",
+    "tsconfig-paths": "^4.2.0",
     "uuid": "^13.0.0"
   },
   "devDependencies": {
