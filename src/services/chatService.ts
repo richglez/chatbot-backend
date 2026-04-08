@@ -2,6 +2,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { readMessage, writeMessage } from "@/repositories/memoryStorage"; // funciones de leer la orden y cocinar la comida
 import { Message } from "@/models/Message"; // RECETA
+import { readUser, writeUser } from "@/repositories/userMemory";
 
 // Posibles intenciones del usuario
 type Intent = "greeting" | "status" | "name" | "ask_name" | "unknown";
@@ -28,42 +29,35 @@ const detectIntent = (msg: string): Intent => {
   if (userPrompt.includes("como estas")) {
     return "status";
   }
-    if (userPrompt.includes("como me llamo")) {
-      return "ask_name";
-    }
+  if (userPrompt.includes("como me llamo")) {
+    return "ask_name";
+  }
   if (userPrompt.includes("me llamo")) {
     return "name";
   }
-
 
   return "unknown";
 };
 
 // 🧠 Obtener últimos mensajes
-export const getRecentMessages = (limit: number = 5): Message[] => {
-  const chats = readMessage(); // obtener la conversacion completa del json
+export const getRecentMessages = (
+  userId: string,
+  limit: number = 5,
+): Message[] => {
+  const chats = readMessage(userId); // obtener la conversacion completa del json
   return chats.slice(-limit); // esto trae los ultimos 5 mensajes de la conversacion
 };
 
 // 🧠 Función principal del bot
-export const handleChat = (msg: string): { reply: string } => {
+export const handleChat = (userId: string, msg: string): { reply: string } => {
+  const userData = readUser(userId);
   const userPrompt = normalize(msg);
-  const recentMessages = getRecentMessages();
+  const recentMessages = getRecentMessages(userId);
 
   const intent = detectIntent(userPrompt);
   const lastMessage = recentMessages[recentMessages.length - 1];
 
   let botResponse = "";
-  let userName: string | null = null;
-
-  // 🔍 Buscar nombre en historial
-  for (const m of recentMessages) {
-    const normalized = normalize(m.user);
-
-    if (normalized.includes("me llamo")) {
-      userName = m.user.split("me llamo")[1]?.trim() || null;
-    }
-  }
 
   // 🧠 CONTEXTO: detectar si ya saludó
   const hasGreetedBefore = recentMessages.some((m) =>
@@ -89,6 +83,7 @@ export const handleChat = (msg: string): { reply: string } => {
       if (!cleanName || cleanName.length < 2 || cleanName.includes("?")) {
         botResponse = "No entendí tu nombre 🤔";
       } else {
+        writeUser(userId, { ...userData, name: cleanName }); // Guardar nombre en memoria
         botResponse = `¡Encantado de conocerte, ${cleanName}! 😄`;
       }
 
@@ -96,8 +91,8 @@ export const handleChat = (msg: string): { reply: string } => {
     }
 
     case "ask_name":
-      botResponse = userName
-        ? `Te llamas ${userName} 😏`
+      botResponse = userData.name
+        ? `Te llamas ${userData.name} 😏`
         : "Aún no me has dicho tu nombre 🤔";
       break;
 
@@ -119,16 +114,17 @@ export const handleChat = (msg: string): { reply: string } => {
         "🤖 Lo siento, no entiendo tu mensaje. ¿Puedes reformularlo?";
   }
   // 💾 Guardar mensaje
-  const message = readMessage();
+  const message = readMessage(userId);
 
   const newMessage: Message = {
     id: uuidv4(),
+    userId,
     user: msg, // guardamos original (no normalizado)
     bot: botResponse,
     timestamp: new Date().toISOString(),
   };
 
   // Guardar la nueva conversación en el archivo JSON
-  writeMessage([...message, newMessage]);
+  writeMessage(userId, [...message, newMessage]);
   return { reply: botResponse };
 };
