@@ -14,3 +14,15 @@ A robust backend developed with Node.js and TypeScript that implements a user st
 - **API**: RESTful API with data exchange in JSON format
 - **Architecture**: Clean Architecture (Controllers, Services, and Repositories)
 - **Persistence**: File System (FS) for local storage of sessions and profiles
+
+## Project Structure
+```
+├───data/
+├───src/
+    ├───controllers/
+    ├───models/
+    ├───repositories/
+    ├───routes/
+    ├───services/
+    └───utils/
+```
